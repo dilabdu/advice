@@ -1,0 +1,162 @@
+@import "../fonts/fonts.css";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: #202733;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.advice_container {
+  background-color: #313a48;
+  box-shadow: 30px 50px 80px 0px #0000001a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.8rem;
+  padding-right: 4.8rem;
+  padding-left: 4.8rem;
+  position: relative;
+  border-radius: 15px;
+}
+
+.advice {
+  color: #53ffaa;
+  font-size: 1.3rem;
+  letter-spacing: 4.09px;
+  margin-bottom: 2.4rem;
+}
+
+.advice_text {
+  color: #cee3e9;
+  font-size: 2.8rem;
+  letter-spacing: -0.3px;
+  margin-bottom: 4rem;
+}
+
+.bottom_border {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-bottom: 4rem;
+}
+.length_border {
+  width: 196px;
+  height: 1px;
+  background-color: #4f5d74;
+}
+.center_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+.bold_border {
+  width: 6px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #cee3e9;
+}
+
+.random_advice {
+  position: absolute;
+  bottom: -32px;
+  width: 64px;
+  height: 64px;
+  background-color: #53ffaa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.random_advice:active {
+  box-shadow: 0px 0px 40px 0px #53ffaa;
+}
+
+@media screen and (max-width: 343px) {
+  .advice {
+    font-size: 1.1rem;
+    letter-spacing: 3.46px;
+  }
+  .advice_text {
+    font-size: 2.4rem;
+    letter-spacing: -0.26px;
+  }
+  .length_border {
+    width: 122px;
+  }
+}
+
+.overlay {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.hidden {
+  display: none;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

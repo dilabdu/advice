@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container advice_container">
+      <p class="advice">
+        Advice #
+        <span id="advice_id">0</span>
+      </p>
+      <p class="advice_text" id="advice_text">Advice text</p>
+      <div class="bottom_border">
+        <span class="length_border"></span>
+        <div class="center_border">
+          <span class="bold_border"></span>
+          <span class="bold_border"></span>
+        </div>
+        <span class="length_border"></span>
+      </div>
+      <button class="random_advice" id="random-advice">
+        <img
+          class="random_img"
+          src="./images/Shape.svg"
+          alt=""
+          width="24"
+          height="24"
+        />
+      </button>
+    </div>
+    <div class="overlay hidden" id="overlay">
+      <span class="loader"></span>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
