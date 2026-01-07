@@ -6,10 +6,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
-  width: 100%;
 }
 body {
   font-family: "Manrope", sans-serif;
@@ -66,6 +69,7 @@ main {
   font-size: 2.8rem;
   letter-spacing: -0.3px;
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 .bottom_border {
@@ -74,7 +78,6 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 1.6rem;
-  margin-bottom: 4rem;
 }
 .length_border {
   width: 196px;
@@ -96,6 +99,7 @@ main {
 }
 
 .random_advice {
+  border: none;
   position: absolute;
   bottom: -32px;
   width: 64px;
@@ -105,6 +109,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .random_advice:active {
